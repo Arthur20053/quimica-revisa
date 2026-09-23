@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10263b">
+  <meta name="description" content="Química orgânica do zero: aulas, exemplos resolvidos, prática e correção comentada das duas listas da prova.">
+  <title>Química orgânica do zero · Revisão da prova</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="extras.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">C</span><span>QUÍMICA<span class="brand-light">/DO ZERO</span></span></div>
+    <div class="top-right"><span class="deadline">REVISÃO PARA A PROVA</span><span id="progressTop" aria-live="polite">0/8 aulas</span></div>
+  </header>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navegação de estudo">
+      <div class="sidebar-heading">SEU ROTEIRO <span>8 ETAPAS</span></div>
+      <nav id="lessonNav" aria-label="Aulas"></nav>
+      <div class="side-divider"></div>
+      <button class="side-link" data-view="practice"><span class="side-icon">✦</span> Treino por assunto</button>
+      <button class="side-link" data-view="exam"><span class="side-icon">◎</span> Simulado misto</button>
+      <button class="side-link" data-view="review"><span class="side-icon">✓</span> Correção das listas</button>
+      <div class="side-bottom"><div class="progress-label"><span>Seu avanço</span><strong id="progressPercent">0%</strong></div><div class="progress-track"><div id="progressBar"></div></div><p>O progresso fica salvo neste navegador.</p></div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <section id="homeView" class="view">
+        <div class="eyebrow">SEU CADERNO DE REVISÃO <span class="dash"></span> 2 LISTAS · 30 QUESTÕES</div>
+        <div class="home-head"><div><h1>Química orgânica,<br><em>do primeiro passo.</em></h1><p class="lead">Comece lendo a fórmula. Depois aprenda a reconhecer a cadeia, o tipo de substância e o grupo que define a função. Uma ideia de cada vez.</p><button class="primary" data-start>Começar pela aula 1 <span aria-hidden="true">↗</span></button></div><div class="formula-art" aria-hidden="true"><div class="formula-top">LEIA A ESTRUTURA</div><div class="formula-main">CH₃<span>—</span>CH₂<span>—</span>OH</div><div class="formula-bottom"><span>2 carbonos</span><span>grupo –OH</span><span>álcool</span></div></div></div>
+        <div class="section-title"><span>01 / COMO ESTUDAR</span><h2>Um caminho curto e claro</h2></div>
+        <div class="steps"><article><b>01</b><h3>Leia a aula</h3><p>Explicação simples, palavras traduzidas e um exemplo resolvido passo a passo.</p></article><article><b>02</b><h3>Tente sozinho</h3><p>Quatro questões novas por tema. Escolha uma alternativa e veja por quê.</p></article><article><b>03</b><h3>Volte às listas</h3><p>Confira a resposta e a justificativa de cada questão dos dois PDFs.</p></article></div>
+        <div class="section-title"><span>02 / MAPA DA PROVA</span><h2>O que aparece nas suas listas</h2></div><div id="mapCards" class="map-cards"></div>
+        <div class="section-title"><span>03 / REVISÃO RÁPIDA</span><h2>Um minuto para destravar</h2></div>
+        <div class="cheat-grid"><article><span>01 · CADEIA</span><strong>Anel? C=C ou C≡C? O entre carbonos?</strong><p>Responda nessa ordem: aberta/fechada, saturada/insaturada, homogênea/heterogênea.</p></article><article><span>02 · SUBSTÂNCIA</span><strong>Só C e H? Hidrocarboneto.</strong><p>Em cadeia aberta, simples → alcano; dupla → alceno; tripla → alcino. Anel aromático → aromático.</p></article><article><span>03 · OXIGÊNIO</span><strong>Onde ele está ligado?</strong><p>C–OH em C saturado → álcool; anel–OH → fenol; C–O–C → éter.</p></article></div>
+        <div class="study-plan"><h2>Se você vai estudar hoje</h2><ol><li><strong>Primeira passada:</strong> aulas 1–4 para aprender a ler e nomear (30–40 min).</li><li><strong>Segunda passada:</strong> aulas 5–8 e os exemplos resolvidos (30–40 min).</li><li><strong>Teste:</strong> simulado misto sem consultar as aulas; volte só nos erros (20 min).</li><li><strong>Fechamento:</strong> refaça as duas listas e explique as discursivas em voz alta ou no papel.</li></ol><button class="secondary" data-view="exam">Abrir simulado →</button></div>
+        <div class="source-strip"><div><strong>Listas originais</strong><p>Você pode abrir os PDFs junto com a correção comentada.</p></div><div class="source-links"><a href="listas/Lista_Exercicios_Quimica_Organica.pdf" target="_blank">Cadeias e hidrocarbonetos ↗</a><a href="listas/Lista_Exercicios_Funcoes_Organicas_Alcool_Fenol_Eter.pdf" target="_blank">Álcool, fenol e éter ↗</a></div></div>
+        <div class="references"><h2>Para ir além da lista</h2><p>As explicações foram conferidas com materiais de química orgânica e regras de nomenclatura. O site pode ser usado sem internet; estes links são leituras complementares.</p><ul><li><a href="https://openstax.org/books/organic-chemistry/pages/1-12-drawing-chemical-structures" target="_blank" rel="noopener">OpenStax · Como ler estruturas químicas ↗</a></li><li><a href="https://openstax.org/books/chemistry-2e/pages/20-1-hydrocarbons" target="_blank" rel="noopener">OpenStax · Hidrocarbonetos ↗</a></li><li><a href="https://openstax.org/books/organic-chemistry/pages/17-1-naming-alcohols-and-phenols" target="_blank" rel="noopener">OpenStax · Álcoois e fenóis ↗</a></li><li><a href="https://iupac.qmul.ac.uk/BlueBook/P6.html" target="_blank" rel="noopener">IUPAC · Referência de nomenclatura ↗</a></li></ul></div>
+      </section>
+      <section id="lessonView" class="view" hidden></section>
+      <section id="practiceView" class="view" hidden></section>
+      <section id="examView" class="view" hidden></section>
+      <section id="reviewView" class="view" hidden></section>
+    </main>
+  </div>
+  <nav class="mobile-nav" aria-label="Navegação principal"><button data-view="home">Início</button><button data-view="lesson" data-first-lesson>Aulas</button><button data-view="practice">Treino</button><button data-view="exam">Simulado</button><button data-view="review">Listas</button></nav>
+</body>
+</html>
