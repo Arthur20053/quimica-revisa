@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10263b">
+  <meta name="description" content="Química orgânica do zero: aulas, exemplos resolvidos, prática e correção comentada das duas listas da prova.">
+  <title>Química orgânica do zero · Revisão da prova</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="extras.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="ux.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">C</span><span class="brand-name">QUÍMICA<span class="brand-light">/DO ZERO</span><span class="brand-author"> com Arthur Malta</span></span></div>
+    <div class="top-right"><span class="deadline">REVISÃO PARA A PROVA</span><span id="progressTop" aria-live="polite">0/8 aulas</span></div>
+  </header>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navegação de estudo">
+      <div class="sidebar-heading">SEU ROTEIRO <span>8 ETAPAS</span></div>
+      <nav id="lessonNav" aria-label="Aulas"></nav>
+      <div class="side-divider"></div>
+      <button class="side-link" data-view="practice"><span class="side-icon">✦</span> Treino por assunto</button>
+      <button class="side-link" data-view="exam"><span class="side-icon">◎</span> Simulado misto</button>
+      <button class="side-link" data-view="review"><span class="side-icon">✓</span> Correção das listas</button>
+      <div class="side-bottom"><div class="progress-label"><span>Seu avanço</span><strong id="progressPercent">0%</strong></div><div class="progress-track"><div id="progressBar"></div></div><p>O progresso fica salvo neste navegador.</p></div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <section id="homeView" class="view">
+        <span class="eyebrow">REVISÃO PARA A PROVA</span>
+        <h1>Química orgânica,<br><em>sem complicação.</em></h1>
+        <p class="lead">Leia uma aula, faça quatro questões e avance. O site lembra de onde você parou.</p>
+        <div class="next-card"><span>SEU PRÓXIMO PASSO</span><h2 id="homeNextLabel">Aula 1 · Aprenda a ler uma fórmula</h2><p id="homeNextDescription">Comece pelas letras e ligações da estrutura.</p><button class="primary" data-continue>Começar agora →</button></div>
+        <div class="home-shortcuts"><button data-open-practice><strong>Treinar</strong><span>Uma questão por vez →</span></button><button data-view="exam"><strong>Simulado</strong><span>12 questões misturadas →</span></button><button data-view="review"><strong>Corrigir PDFs</strong><span>Gabarito comentado →</span></button></div>
+        <details class="home-details"><summary>Escolher outra aula</summary><div id="mapCards" class="map-cards"></div></details>
+        <details class="home-details"><summary>Resumo rápido para consultar</summary><div class="cheat-grid"><article><span>01 · CADEIA</span><strong>Anel? C=C ou C≡C? O entre carbonos?</strong><p>Responda: aberta/fechada, saturada/insaturada, homogênea/heterogênea.</p></article><article><span>02 · HIDROCARBONETO</span><strong>Só C e H?</strong><p>Simples → alcano; dupla → alceno; tripla → alcino; anel aromático → aromático.</p></article><article><span>03 · OXIGÊNIO</span><strong>Onde está o O?</strong><p>C–OH → álcool; anel–OH → fenol; C–O–C → éter.</p></article></div></details>
+        <details class="home-details"><summary>Roteiro de revisão para hoje</summary><div class="study-plan"><ol><li>Aulas 1–4: leia e faça quatro questões por aula.</li><li>Aulas 5–8: repita o mesmo processo.</li><li>Faça o simulado e revise o que errou.</li><li>Refaça as duas listas e escreva as respostas discursivas.</li></ol></div></details>
+        <details class="home-details"><summary>PDFs originais e leituras complementares</summary><div class="source-links"><a href="listas/Lista_Exercicios_Quimica_Organica.pdf" target="_blank" rel="noopener">Lista 1 · Cadeias e hidrocarbonetos ↗</a><a href="listas/Lista_Exercicios_Funcoes_Organicas_Alcool_Fenol_Eter.pdf" target="_blank" rel="noopener">Lista 2 · Álcool, fenol e éter ↗</a></div><div class="references"><ul><li><a href="https://openstax.org/books/organic-chemistry/pages/1-12-drawing-chemical-structures" target="_blank" rel="noopener">OpenStax · Estruturas químicas ↗</a></li><li><a href="https://openstax.org/books/chemistry-2e/pages/20-1-hydrocarbons" target="_blank" rel="noopener">OpenStax · Hidrocarbonetos ↗</a></li><li><a href="https://openstax.org/books/organic-chemistry/pages/17-1-naming-alcohols-and-phenols" target="_blank" rel="noopener">OpenStax · Álcoois e fenóis ↗</a></li><li><a href="https://iupac.qmul.ac.uk/BlueBook/P6.html" target="_blank" rel="noopener">IUPAC · Nomenclatura ↗</a></li></ul></div></details>
+      </section>
+      <section id="lessonView" class="view" hidden></section>
+      <section id="practiceView" class="view" hidden></section>
+      <section id="examView" class="view" hidden></section>
+      <section id="reviewView" class="view" hidden></section>
+    </main>
+  </div>
+  <nav class="mobile-nav" aria-label="Navegação principal"><button data-view="home">Início</button><button data-view="lesson" data-first-lesson>Aulas</button><button data-view="practice">Treino</button><button data-view="review">Listas</button></nav>
+</body>
+</html>

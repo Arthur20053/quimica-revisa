@@ -1,0 +1,95 @@
+/* Layout para telefone: esta folha prevalece sobre os estilos amplos. */
+@media (max-width: 740px) {
+  html { scroll-padding-top: 86px; }
+  body { width: 100%; min-width: 0; }
+  .topbar {
+    min-height: 70px;
+    height: auto;
+    padding: 9px 16px;
+    gap: 8px;
+    align-items: center;
+  }
+  .topbar .brand { flex: 1 1 auto; gap: 10px; min-width: 0; font-size: 15px; line-height: 1.1; }
+  .brand-icon { flex: none; width: 34px; height: 34px; font-size: 21px; }
+  .brand-name { display: block; min-width: 0; white-space: normal; letter-spacing: .02em; }
+  .brand-light { white-space: nowrap; }
+  .brand-author { display: block; margin-top: 4px; font-size: 12px; color: var(--gold); letter-spacing: 0; }
+  .top-right { display: none; }
+
+  .shell { display: block; min-height: 0; }
+  .sidebar { display: none; }
+  main { display: block; width: 100%; max-width: 600px; min-width: 0; padding: 23px 16px calc(112px + env(safe-area-inset-bottom)); }
+  .view, .lesson-body, .home-head > div, .question-card, .exam-question { min-width: 0; }
+  .view[hidden] { display: none; }
+  h1, .lesson-header h1, .inner-title { font-size: clamp(32px, 8.5vw, 44px); line-height: 1.08; letter-spacing: -.035em; overflow-wrap: break-word; }
+  h2, h3 { overflow-wrap: break-word; }
+  .eyebrow { display: block; font-size: 11px; line-height: 1.5; letter-spacing: .11em; }
+  .dash { width: 14px; margin: 0 4px 3px; }
+  .home-head { display: grid; grid-template-columns: minmax(0,1fr); gap: 24px; margin: 15px 0 31px; }
+  .home-head h1 { margin-bottom: 16px; }
+  .lead, .intro-copy, .lesson-header p { font-size: 16px; line-height: 1.55; }
+  .primary, .secondary { max-width: 100%; min-height: 48px; }
+  .home-head .primary { width: 100%; }
+
+  .formula-art { width: 100%; max-width: none; min-height: 168px; padding: 18px; border-radius: 16px; box-shadow: 5px 5px 0 #dcebe9; }
+  .formula-top { font-size: 11px; }
+  .formula-main { font-size: clamp(22px, 7.7vw, 36px); letter-spacing: -.055em; white-space: nowrap; }
+  .formula-bottom { flex-wrap: wrap; justify-content: flex-start; gap: 5px; }
+  .formula-bottom span { font-size: 11px; line-height: 1.25; padding: 5px 8px; }
+
+  .section-title { margin: 34px 0 15px; }
+  .section-title h2 { font-size: clamp(23px, 6vw, 30px); }
+  .steps, .map-cards, .cheat-grid { grid-template-columns: minmax(0,1fr); gap: 10px; }
+  .steps article, .map-card, .cheat-grid article { padding: 18px; }
+  .steps h3 { margin: 10px 0 5px; }
+  .study-plan, .source-strip { padding: 20px; }
+  .source-strip { margin-top: 30px; }
+  .source-links a, .references a { overflow-wrap: anywhere; }
+  .references ul { columns: 1; }
+
+  .lesson-header { padding-bottom: 17px; }
+  .lesson-card, .compare-lab { margin-top: 16px; padding: 18px; border-radius: 14px; }
+  .lesson-card h2 { font-size: 22px; }
+  .lesson-card p, .lesson-card li, .worked li { line-height: 1.62; }
+  .formula { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+  .formula-line { white-space: normal; overflow-wrap: anywhere; }
+  .rule { padding: 13px 14px; }
+  .worked li { padding-left: 38px; }
+  .lesson-actions { display: grid; grid-template-columns: minmax(0,1fr); gap: 9px; }
+  .lesson-actions button { width: 100%; text-align: center; }
+  .compare-pair { grid-template-columns: minmax(0,1fr); }
+  .compare-molecule { padding: 13px; }
+
+  .question-card { padding: 17px; margin: 12px 0; }
+  .question-card h3 { font-size: 18px; }
+  .choice { min-width: 0; min-height: 48px; padding: 12px; }
+  .choice span:last-child { min-width: 0; overflow-wrap: anywhere; }
+  .filter-row { flex-wrap: nowrap; width: 100%; overflow-x: auto; gap: 7px; padding: 3px 0 12px; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+  .filter { flex: none; white-space: nowrap; }
+  .exam-shortcut { width: 100%; margin: 15px 0 2px; }
+
+  .exam-question { padding: 15px 13px 16px; margin: 15px 0; }
+  .exam-question legend { font-size: 17px; line-height: 1.35; }
+  .exam-option { min-height: 48px; padding: 10px; overflow-wrap: anywhere; }
+  .exam-option span { min-width: 0; }
+  .review-card summary { padding: 14px; gap: 10px; align-items: flex-start; }
+  .review-card summary > span:nth-child(2) { min-width: 0; flex: 1; overflow-wrap: anywhere; }
+  .review-card summary::after { flex: none; line-height: 1; }
+  .review-body { padding: 0 15px 17px; overflow-wrap: anywhere; }
+
+  .mobile-nav {
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    height: calc(62px + env(safe-area-inset-bottom));
+    padding-bottom: env(safe-area-inset-bottom);
+    box-shadow: 0 -5px 18px #10263b0d;
+  }
+  .mobile-nav button { min-width: 0; padding: 0 3px; font-size: 14px; line-height: 1.2; }
+}
+
+@media (max-width: 360px) {
+  main { padding-left: 14px; padding-right: 14px; }
+  .formula-art { padding: 15px; }
+  .formula-main { font-size: 22px; }
+  .brand-light { white-space: normal; }
+  .mobile-nav button { font-size: 13px; }
+}
